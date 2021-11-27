@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+{{ $info := getJSON "/data/task1-hugo.json" }}
+
+<main>
+   <table border="2">
+      <caption>Generator Table</caption>
+      <tr>
+         <th>ID</th>
+         <th>Names</th>
+         <th>Address</th>
+         <th>Source</th>
+      </tr>
+      {{ range $info }}
+      {{ partial "infotable.html" . }}
+      {{ end }}
+   </table>
+</main>
+
+{{ partial "footer.html" . }}
