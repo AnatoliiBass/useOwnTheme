@@ -1,0 +1,144 @@
+{
+   "took": 7,
+   "timed_out": false,
+   "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+   },
+   "hits": {
+      "total": {
+         "value": 10000,
+         "relation": "gte"
+      },
+      "max_score": 1.0,
+      "hits": [
+         {
+            "_index": "csl",
+            "_type": "_doc",
+            "_id": "01a0f4c8a6826412c93f5cb11c05bbbea57da24d",
+            "_score": 1.0,
+            "_source": {
+               "alt_names": [
+                  "48th TsNII Sergiev Posad; Zargorsk Institute; Scientific Research Institute of Medicine; and The Virology Center"
+               ],
+               "type": null,
+               "name": "48th999Central999Scientific999Research999Institute999Sergiev999Posad",
+               "ids": null,
+               "entity_number": null,
+               "citizenships": null,
+               "addresses": [
+                  {
+                     "country": "RU",
+                     "postal_code": null,
+                     "state": null,
+                     "city": "Moscow",
+                     "address": "11 Ulitsa Oktyabrskaya, Sergiev Posad, Moscow Oblast"
+                  }
+               ],
+               "id": "01a0f4c8a6826412c93f5cb11c05bbbea57da24d",
+               "nationalities": null,
+               "places_of_birth": null,
+               "programs": null,
+               "remarks": null,
+               "source": "Entity List (EL) - Bureau of Industry and Security",
+               "source_information_url": "http://bit.ly/1L47xrV",
+               "source_list_url": "http://bit.ly/1L47xrV",
+               "title": null
+            }
+         },
+         {
+            "_index": "csl",
+            "_type": "_doc",
+            "_id": "01a0f4c8a6826412c93f5cb11c05bbbea57da24d-1",
+            "_score": 1.0,
+            "_source": {
+               "alt_names": [
+                  "48th TsNII Sergiev Posad; Zargorsk Institute; Scientific Research Institute of Medicine; and The Virology Center"
+               ],
+               "type": null,
+               "name": "48th999TsNII999Sergiev999Posad999Zargorsk999Institute999Scientific999Research999Institute999of999Medicine999and999The999Virology999Center",
+               "ids": [
+                  {
+                     "type": "Matricula Mercantil No",
+                     "number": "1978075",
+                     "issue_date": null,
+                     "expiration_date": null,
+                     "country": "CO"
+                  }
+               ],
+               "entity_number": null,
+               "citizenships": null,
+               "addresses": [
+                  {
+                     "country": "RU",
+                     "postal_code": null,
+                     "state": null,
+                     "city": "Moscow",
+                     "address": "11 Ulitsa Oktyabrskaya, Sergiev Posad, Moscow Oblast"
+                  }
+               ],
+               "id": "01a0f4c8a6826412c93f5cb11c05bbbea57da24d",
+               "nationalities": null,
+               "places_of_birth": null,
+               "programs": null,
+               "remarks": null,
+               "source": "Entity List (EL) - Bureau of Industry and Security",
+               "source_information_url": "http://bit.ly/1L47xrV",
+               "source_list_url": "http://bit.ly/1L47xrV",
+               "title": null,
+               "origin": "01a0f4c8a6826412c93f5cb11c05bbbea57da24d"
+            }
+         },
+         {
+            "_index": "csl",
+            "_type": "_doc",
+            "_id": "c626b642356e926c814ca238270af7d89079ecca",
+            "_score": 1.0,
+            "_source": {
+               "alt_names": [
+                  "48th TsNII Yekaterinburg; Military Technical Scientific Research Institute; and Center for Military Technical Problems of Biological Defense"
+               ],
+               "type": null,
+               "name": "48th999Central999Scientific999Research999Institute999Yekaterinburg",
+               "ids": null,
+               "entity_number": null,
+               "citizenships": null,
+               "addresses": [
+                  {
+                     "country": "RU",
+                     "postal_code": null,
+                     "state": null,
+                     "city": null,
+                     "address": "1 Ulitsa Zvezdnaya, Yekaterinburg, Sverdlovsk Oblast"
+                  },
+                  {
+                     "country": "RU",
+                     "postal_code": null,
+                     "state": null,
+                     "city": null,
+                     "address": "1 Ulitsa Zvezdnaya, Yekaterinburg, Sverdlovsk Oblast"
+                  },
+                  {
+                     "country": "RU",
+                     "postal_code": null,
+                     "state": null,
+                     "city": null,
+                     "address": "1 Ulitsa Zvezdnaya, Yekaterinburg, Sverdlovsk Oblast"
+                  }
+               ],
+               "id": "c626b642356e926c814ca238270af7d89079ecca",
+               "nationalities": null,
+               "places_of_birth": null,
+               "programs": null,
+               "remarks": null,
+               "source": "Entity List (EL) - Bureau of Industry and Security",
+               "source_information_url": "http://bit.ly/1L47xrV",
+               "source_list_url": "http://bit.ly/1L47xrV",
+               "title": null
+            }
+         }
+      ]
+   }
+}
