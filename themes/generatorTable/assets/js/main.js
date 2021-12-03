@@ -46,43 +46,55 @@ const createTable = (infoArray) => {
    const table = document.createElement('table')
    table.setAttribute('border', '2')
    const caption = document.createElement('caption')
-   caption.textContent = `Table #${numberTable}`
+   caption.textContent = `Table #${numberTable} ${nameTable}`
    table.append(caption)
    numberTable++
    const tbody = document.createElement('tbody')
    const trh = document.createElement('tr')
-   const trd = document.createElement('tr')
+   const thn = document.createElement('th')
+   thn.textContent = 'NO'
+   trh.append(thn)
    keys.forEach(item => {
       const th = document.createElement('th')
       th.textContent = item
       trh.append(th)
    })
    tbody.append(trh)
-   infoArray.forEach(element => {
-      const values = Object.values(element)
-      values.forEach(item => {
-         if (item instanceof Object) {
-            const { empty, newData } = isEmpty(item)
-            console.log(item, newData);
-            if (!empty) {
-               if (newData[0] instanceof Object) {
-                  createTable(newData)
-               }
-            }
-         }
+   for (let j = 0; j < infoArray.length; j++) {
+      const values = Object.values(infoArray[j])
+      const trd = document.createElement('tr')
+      const tdn = document.createElement('td')
+      tdn.textContent = j + 1
+      trd.append(tdn)
+      for (let i = 0; i < values.length; i++) {
          const td = document.createElement('td')
-         td.textContent = item
-         trd.append(td)
-      })
+         if (values[i] instanceof Object) {
+            const { empty, newData } = isEmpty(values[i])
+            if (!empty && (newData[0] instanceof Object)) {
+               nameTable = keys[i]
+               const button = document.createElement('button')
+               button.textContent = `Table #${numberTable} ${nameTable} line NO ${j + 1}`
+               td.append(button)
+               trd.append(td)
+               createTable(newData)
+            } else {
+               td.textContent = values[i]
+               trd.append(td)
+            }
+         } else {
+            td.textContent = values[i]
+            trd.append(td)
+         }
+      }
       tbody.append(trd)
-   })
+   }
 
    table.append(tbody)
    container.appendChild(table)
 }
 
 const { empty, newData } = isEmpty(data.default)
-let numberTable = 1
+let numberTable = 1, nameTable = 'Main'
 console.log(empty, newData);
 if (empty) {
    container.innerHTML = `<h1>Your JSON is empty</h1>`
